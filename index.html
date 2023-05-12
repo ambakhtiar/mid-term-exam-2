@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="main">
+        <div id="idd1" onmouseover="colorchange('idd1')" class="block">
+            <img src="./asset/triangle.png" alt="">
+            <h2>Triangle </h2>
+            <p>Area (A) = 0.5 X b X h</p>
+            <div id="triinp">
+                <input id="t1" type="number" class="inputbox">
+                <input id="t2" type="number" class="inputbox">
+            </div>
+            <button onclick="calculate('triangle', t1, t2)">Submit</button>
+        </div>
+        <div id="idd2" onmouseover="colorchange('idd2')" class="block">
+            <img src="./asset/rectangle.png" alt="">
+            <h2>Ractangle </h2>
+            <p>Area (A) = W X I</p>
+            <div id="triinp">
+                <input id="r1" type="number" class="inputbox">
+                <input id="r2" type="number" class="inputbox">
+            </div>
+            <button onclick="calculate('rectangle', r1, r2)">Submit</button>
+        </div>
+        <div id="idd3" onmouseover="colorchange('idd3')" class="block">
+            <img src="./asset/parallelogram.png" alt="">
+            <h2>Parallelogram </h2>
+            <p>Area (A) = b X h</p>
+            <div id="triinp">
+                <input id="p1" type="number" class="inputbox">
+                <input id="p2" type="number" class="inputbox">
+            </div>
+            <button onclick="calculate('Parallelogram', p1, p2)">Submit</button>
+        </div>
+        <div id="idd4" onmouseover="colorchange('idd4')" class="block">
+            <h2>Calculation </h2>
+            <div>
+                <h2 id="output"></h2>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
